@@ -39,7 +39,7 @@ createApp({
             if(this.done == false){
                 this.done = true
                 this.doneClass = "done"
-                console.log("done class è: " this.doneClass)
+                
                 
 
             }else{
