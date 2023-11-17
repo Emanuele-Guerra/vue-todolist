@@ -27,27 +27,19 @@ createApp({
                 {
                     text: "Odiarsi a giorni alterni",
                     done: false
-            },
-        ],
-        
-        doneClass: "done",
+                },
+            ],
+            
+            isActive: false
         
     }
 },
     methods: {
         getDone(){
-            if(this.done == false){
-                this.done = true
-                this.doneClass = "done"
-                
-                
+            console.log("this is done")
+           this.oggetti.done = true
 
-            }else{
-                this.done = false
-                this.doneClass = null
-            }
-            console.log(this.done)
         },
-     
+        
     }
 }).mount('#app')

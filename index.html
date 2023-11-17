@@ -9,9 +9,12 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li :class="doneClass" @click="getDone()" v-for="i in oggetti">{{ i.text }}</li>
-        </ul>
+        <div>
+            <ul>
+                <li  @click="getDone()" :class="oggetti.done" v-for="i in oggetti">{{ i.text }}</li>
+            </ul>
+        </div>
+        
 
     </div>
     <script src="js/main.js"></script>
