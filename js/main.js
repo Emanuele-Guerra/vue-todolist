@@ -30,24 +30,35 @@ createApp({
                 },
             ],
             
-            doneClass: ""
+            doneClass: "",
         
     }
 },
-    methods: {
-        getDone(){
+methods: {
+    getDone(index){
+            console.log("im before the function ")
             
-        if(this.oggetti.done = false){
-            this
-        }
-        else{this.oggetti.done == true
-                this.doneClass="done"
-                
-                
+            
 
+            if (this.oggetti.done == false) {
+                this.oggetti.done = true
+                this.doneClass = "done"
+
+                console.log("im in the if ")
+            } else if (this.oggetti.done == true) {
+                this.oggetti.done = false
+                this.doneClass = ""  
+
+                console.log("im in the else if ")
+            } else {
+               console.log("in the else")
             }
+                
+                },
+            
+        
 
-        },
+        
         
     }
 }).mount('#app')
