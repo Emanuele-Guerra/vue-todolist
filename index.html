@@ -11,7 +11,8 @@
     <div id="app">
         <div>
             <ul>
-                <li  @click="getDone()" :class="oggetti.done" v-for="i in oggetti">{{ i.text }}</li>
+                <li  @click="getDone()" :class="doneClass" v-for="i in oggetti">{{ i.text }}</li>
+                <span v-for="j in oggetti">{{ j.oggetti }}</span>
             </ul>
         </div>
         

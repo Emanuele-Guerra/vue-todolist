@@ -30,14 +30,22 @@ createApp({
                 },
             ],
             
-            isActive: false
+            doneClass: ""
         
     }
 },
     methods: {
         getDone(){
-            console.log("this is done")
-           this.oggetti.done = true
+            
+        if(this.oggetti.done = false){
+            this
+        }
+        else{this.oggetti.done == true
+                this.doneClass="done"
+                
+                
+
+            }
 
         },
         
